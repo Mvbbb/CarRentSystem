@@ -1,80 +1,98 @@
 package bean;
 
-public class Car {
-    private int c_id;
-    private String c_name;
-    private String c_color;
-    private String c_type;
-    private double c_price;
+import java.sql.Date;
 
+public class Car {
+    private int id;
+    private String carname;
+    private String cartype;
+    private boolean rent;
+    private double price;
+    private String color;
+    private String fk_username;
+    
     public Car() {
     }
 
-    public Car(String c_name, String c_color, String c_type, double c_price) {
-        this.c_name = c_name;
-        this.c_color = c_color;
-        this.c_type = c_type;
-        this.c_price = c_price;
+    public Car(String carname, String cartype, boolean rent, double price, String color, String fk_username) {
+        this.carname = carname;
+        this.cartype = cartype;
+        this.rent = rent;
+        this.price = price;
+        this.color = color;
+        this.fk_username = fk_username;
     }
 
-    public Car(int c_id, String c_name, String c_color, String c_type, double c_price) {
-        this.c_id = c_id;
-        this.c_name = c_name;
-        this.c_color = c_color;
-        this.c_type = c_type;
-        this.c_price = c_price;
+    public Car(String carname, String cartype, double price, String color) {
+        this.carname = carname;
+        this.cartype = cartype;
+        this.price = price;
+        this.color = color;
     }
 
-    public int getC_id() {
-        return c_id;
+    public Car(int id, String carname, String cartype, boolean rent, double price, String color, String fk_username) {
+        this.id = id;
+        this.carname = carname;
+        this.cartype = cartype;
+        this.rent = rent;
+        this.price = price;
+        this.color = color;
+        this.fk_username = fk_username;
     }
 
-    public void setC_id(int c_id) {
-        this.c_id = c_id;
+    public int getId() {
+        return id;
     }
 
-    public String getC_name() {
-        return c_name;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setC_name(String c_name) {
-        this.c_name = c_name;
+    public String getCarname() {
+        return carname;
     }
 
-    public String getC_color() {
-        return c_color;
+    public void setCarname(String carname) {
+        this.carname = carname;
     }
 
-    public void setC_color(String c_color) {
-        this.c_color = c_color;
+    public String getCartype() {
+        return cartype;
     }
 
-    public String getC_type() {
-        return c_type;
+    public void setCartype(String cartype) {
+        this.cartype = cartype;
     }
 
-    public void setC_type(String c_type) {
-        this.c_type = c_type;
+    public boolean isRent() {
+        return rent;
     }
 
-    public double getC_price() {
-        return c_price;
+    public void setRent(boolean rent) {
+        this.rent = rent;
     }
 
-    public void setC_price(double c_price) {
-        this.c_price = c_price;
+    public double getPrice() {
+        return price;
     }
-    
-    
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "c_id=" + c_id +
-                ", c_name='" + c_name + '\'' +
-                ", c_color='" + c_color + '\'' +
-                ", c_type='" + c_type + '\'' +
-                ", c_price=" + c_price +
-                '}';
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getFk_username() {
+        return fk_username;
+    }
+
+    public void setFk_username(String fk_username) {
+        this.fk_username = fk_username;
     }
 }

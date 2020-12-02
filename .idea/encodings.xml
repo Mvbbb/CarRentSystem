@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/admin/Add.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/admin/AdminPage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/admin/CarDetail.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/admin/Update.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/admin/Xiangxi.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/base/Login.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/base/Register.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/user/CarDetail.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/user/UserPage.java" charset="GBK" />
+  </component>
+</project>

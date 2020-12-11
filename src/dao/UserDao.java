@@ -2,6 +2,10 @@ package dao;
 
 import bean.User;
 
+/**
+ * 用于user表的操作
+ * @author yuzhihai
+ */
 public class UserDao extends BaseDao{
     public boolean isUserExists(String username){
         User user = super.queryForOne(User.class, "select * from user where username=?", username);

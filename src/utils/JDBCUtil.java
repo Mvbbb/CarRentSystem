@@ -9,6 +9,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
 
+/**
+ * 工具类, 用于获取数据库连接管理
+ * @author yuzhihai
+ */
 public class JDBCUtil {
     private static DataSource dataSource=null;
 

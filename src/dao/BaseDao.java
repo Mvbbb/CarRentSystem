@@ -12,6 +12,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * 为其他dao提供基本操作
+ * @author yuzhihai
+ */
 public abstract class BaseDao {
     private QueryRunner queryRunner=new QueryRunner();
 

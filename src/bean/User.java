@@ -1,5 +1,8 @@
 package bean;
 
+/**
+ * @author yuzhihai
+ */
 public class User {
     private String username;
     private String user_password;

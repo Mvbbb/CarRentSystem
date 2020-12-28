@@ -168,6 +168,7 @@ public class UpdateCarPage extends JFrame implements ActionListener {
 		String fk_username=field6.getText();
 		String date=field7.getText();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		// 价格必须是>=0的整数或者浮点数
 		String priceRegx="^(([1-9]+[0-9]*.{1}[0-9]+)|([0].{1}[1-9]+[0-9]*)|([1-9][0-9]*)|([0][.][0-9]+[1-9]*))$";
 		if(source == buttonOfConfirm)
 		{

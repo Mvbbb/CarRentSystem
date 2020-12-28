@@ -152,7 +152,9 @@ public class AddCarPage extends JFrame implements ActionListener {
 		String rent=field6.getText();
 		String fk_username=field7.getText();
 		String date=field8.getText(); 
+		// 用于校验用户输入的价格
 		String priceRegx="^(([1-9]+[0-9]*.{1}[0-9]+)|([0].{1}[1-9]+[0-9]*)|([1-9][0-9]*)|([0][.][0-9]+[1-9]*))$";
+		// 用于校验用户输入的日期
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		if(source == buttonofConfirm)
 		{

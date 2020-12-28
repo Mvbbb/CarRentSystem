@@ -35,7 +35,7 @@ public class JDBCUtil {
     }
 
     /**
-     * 用于提前数据库初始化, 防止用户登录时间过长
+     * 用于提前初始化数据库连接, 防止用户登录时间过长
      */
     public static void initDataSource(){
         closeConection(getConnection());
@@ -49,6 +49,7 @@ public class JDBCUtil {
         }
         return conn;
     }
+    
     public static void closeConection(Connection conn){
         try{
             conn.close();
